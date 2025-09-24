@@ -6,7 +6,7 @@ module.exports = {
     name: "whitelist",
     aliases: ["wl"],
     version: "1.6",
-    author: "NTKhang + Modified by Rifat",
+    author: "NTKhang",
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -52,7 +52,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, usersData, event, getLang, api }) {
-    const permission = ["100083039411474"];
+    const permission = ["100093021476757"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("You don't have enough permission to use this command. Only My Authors Have Access.", event.threadID, event.messageID);
     }
